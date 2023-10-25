@@ -2,15 +2,18 @@ name: xcodeproj
 description: A library for reading and modifying XCode projects.
 version: 0.2.3
 homepage: https://github.com/appsup-dart/xcodeproj
+publish_to: "none"
 
 environment:
-  sdk: '>=2.12.0 <3.0.0'
-  
+  sdk: '>=3.0.0 <4.0.0'
 
 dependencies:
   petitparser: ^5.0.0
   xml: ^6.0.0
-  snapshot: ^0.2.0
+  snapshot:
+    git:
+      url: git@github.com:SKnoedler/snapshot.git
+      ref: "5055a63325774deecfd6bac53c51e7b08e999c22"
   crypto: ^3.0.0
   path: ^1.8.0
   quiver: ^3.0.0
